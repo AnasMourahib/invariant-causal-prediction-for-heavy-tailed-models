@@ -22,7 +22,6 @@ def generation (sizes : list, coef : list, linear_coef : list):
         n_e = sizes[e] 
         coef_scale_shape = coef[e]
         slopes_e = np.array(linear_coef[e])
-        print("This is slopes" , slopes_e)
         num_covariates = len(slopes_e) 
         covariates_e = np.zeros((n_e , num_covariates))
         for j in np.arange( num_covariates ):
